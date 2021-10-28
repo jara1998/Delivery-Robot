@@ -1,6 +1,6 @@
 # Delivery-Robot
 
-# Main functionalities
+# Major functionalities
 
 ![image](https://user-images.githubusercontent.com/58502695/139149461-8366d4c4-8fa7-47a0-8a14-98a5b0821e46.png)
 
