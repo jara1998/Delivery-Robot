@@ -9,37 +9,9 @@
 
 ## TBC
 
+# Picture of Robot car
+![image](https://user-images.githubusercontent.com/58502695/142351374-c91fdf89-7b7e-4235-8318-a76537248d51.png)
 
-
-
- 
-
-Ground Prime Delivery Project Report 
-
-Jara Jiang, Jasmine Xu, Ziyi Xie, Fan Yang, Yuhang Li
-
-Dept. of Electrical and Computer Engineering, Box 352500
-University of Washington
-Seattle, Washington 98195-2500 U.S.A.
-
-©
-
-Rev. 1 February 26, 2021
-Rev. 2 March 15, 2021  
-
-
-
-
-
-
-
-
-
-
-
-Team, Roles, and Responsibilities
-
-Our team consists of 5 members with Jara Jiang being the team leader. Jara is in charge of the overall project progress, organizing team meetings on each Thursday and Sunday, keeping track of all the deadlines and submitting assignments on behalf of the  team. In the aspect of project design, Jara Jiang develops the control system for the robot car, integrating all the functions that are developed by other team members within the control system. Yuhang Li develops the Lidar sensing system. Ziyi Xie develops the navigation system. Jara, Yuhang and Ziyi are located in Seattle, taking the responsibility of building and testing the robot car’s functionality. Fan Yang and Jasmine Xu are located in China, taking the responsibility of developing the pedestrian detection system remotely. Fan Yang takes part in the development and testing of the pedestrian detection system. Jasmine Xu took part in the development of the pedestrian detection system and designed the center of the road detection system. All members participate in presentation and documentation editing equally. We respect every idea and vote on every decision we make.
 
 
 Product Requirements Document
