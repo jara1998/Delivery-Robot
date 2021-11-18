@@ -10,30 +10,10 @@ Pedestrian Detection, Obstacle Detection, GPS and Google Map API based navigatio
 
 
 
-**Product Requirements Document**
-
-The market of food delivery is growing dramatically under the pandemic. The U.S. government was forced to close the dining-in option and Americans have to lean heavily on food delivery in many areas. As a result, our major customers would be the delivery companies like Amazon and UberEats or DoorDash which are food or grocery delivery companies. The other major customers could be some companies, universities and individuals which might need to deliver something to the others and they are too busy to do it by themselves or reluctant to go out due to the pandemic. 
-
-Our product prototype is powered purely by the battery packs. It is able to deliver small cargo by travelling on city roads based on a GPS module. It utilizes two MCUs: Raspberry Pi 4 processes the data received from peripheral devices and STM32F407VG receives the robot car’s control signals from the Raspberry Pi 4. A Picamera and Lidar sensor will monitor the surroundings to ensure safety when cruising on roads. The gyroscope, magnetometer and accelerometer modules will keep track of the orientation angle to make sure the robot car stays on track. Our product is very simple to operate: with the cargo load on and input the destination, then it’s all set. The robot car will begin self-driving to the destination based on the feedback from the navigation system. 
-
-Realistic Constraints and Engineering Standards
-
-Our product prototype has rigid performance constraints of: Cruise speed: 1 mile per hour. Power duration time: 30 minutes.  Limitation on cruising radius: 0.8 mile.
-
-In our testing, we found that the GPS signal depends on the weather conditions heavily. On a snowy day, we had a problem connecting with the satellite which caused our robot car to remain stationary for a while. This problem has been significantly improved after we used a new GPS module. Now we are able to connect to the satellite reposefully under most of our testing conditions.
-
-Pedestrian detection is a very crucial function as it monitors the road conditions ahead of the robot car’s moving direction. So we decided to carry a real-time processing of the image data captured by the Picamera on the robot car. However, due to the limit of hardware’s computing power, our pedestrian detection system has a delay of less than 2 seconds. As a result, we pushed away about 2 meters of the warning line from our robot car so that the control system would have enough time to react.
-
-Due to the limitation of hardware’s computing power and the complexity of road conditions, we decided to abandon the road recognition system on our product prototype. In our testing cases, when the robot car passed through a rampway, the center of the road detection program started causing malfunctions. Because the angle of the camera is unable to adjust, the road portion of the image data captured by the camera decreases significantly which causes the center of the road detection program to fail to calculate the reference vector direction of the image.
-
-In this quarter, our project presents the basic features of the self-driving robot for sidewalks. However, there is still a long way to go as a commercial product on the market. During our road test, a more reliable and sustainable power system is required. Currently, the battery voltage level is dropped significantly and turning accuracy is affected by the voltage level of two 9V batteries. In order to have a stable power output, we could choose cylindrical battery cells like the ones from Tesla. One 3.7v 3400mAh 18650 (battery) stories about 10 to 13 watt hours. It also has advantages including but not limited to higher security under mechanical vibrations, lower dollars per kWh and better quality control. In addition, a battery management system is expected to increase the lifespan of the battery cells and  phase-change-material (PCM) should be used to prevent the drop of the capacity of Li-Po batteries in the cold. 
-Safety Standards
-	The safety concerns are our top priority in designing our product. For the components of our product itself, the robot car doesn’t contain any explosive materials. All components are required to work under safe voltage conditions for human beings. However, we require adults’ supervision when assembling our product due to the fact that small and sharp components are included in our product. In preventing possible collisions with pedestrians, vehicles or other obstacles, we developed a pedestrian detection system and Lidar sensing system. The robot car would immediately stop and remain stationary until the road condition is safe and clear for it to progress. 
-
-Performance Standards
+# Performance Standards
 	The performance of our product is mostly restricted by the hardware limitations. Since we are using L298N as the power module for the robot car, the cruise speed is limited to 1 mile per hour. The power duration time is limited to 1 hour due to the fact that we are using a certain capacity of the power bank to power the system. 
 
-Communication and Interface Standards
+# Communication and Interface Standards
 	Our product uses a combination of wire and wireless communication. Pedestrian detection function uses GPIO connection between the Raspberry Pi 4 and STM32F4 for the purpose of simplicity. In our former testing cases, we encountered issues of the GPS signal lost under snowy weather conditions. Then we replaced it with a better GPS module BerryGPS to ensure the stability of the signal connection under any circumstances. For the control system, we use GPIO pin communication as well. Because we have most of the signal processed in Raspberry Pi 4 so that moving instructions could be conveyed by sending different pin values to the STM32F4.
 
 Interference Standards
