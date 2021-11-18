@@ -1,13 +1,9 @@
 # Delivery-Robot
 
-# Major functionalities
+# Major functionalities:
 
-![image](https://user-images.githubusercontent.com/58502695/139149461-8366d4c4-8fa7-47a0-8a14-98a5b0821e46.png)
+Pedestrian Detection, Obstacle Detection, GPS and Google Map API based navigation 
 
-
-![image](https://user-images.githubusercontent.com/58502695/139149530-47756306-760e-4670-99a0-e4e561ea84e8.png)
-
-## TBC
 
 # Picture of Robot car
 ![image](https://user-images.githubusercontent.com/58502695/142351374-c91fdf89-7b7e-4235-8318-a76537248d51.png)
